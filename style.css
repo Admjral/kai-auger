@@ -1,0 +1,367 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+p,
+h1,
+h3,
+a,
+h2 {
+    font-family: "Fira Sans", sans-serif;
+}
+
+h1 {
+    color: white;
+    font-size: 56px;
+    font-weight: 400;
+    width: 70%;
+}
+
+h2 {
+    text-align: center;
+    color: #484848;
+    font-size: 32px;
+}
+
+h3 {
+    font-weight: 500;
+}
+
+p {
+    color: grey;
+}
+
+a {
+    color: aliceblue;
+    text-decoration: none;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+a:hover {
+    color: #1A54C7;
+}
+
+header {
+    background: black;
+    display: flex;
+    justify-content: space-between;
+    height: 100px;
+    align-items: center;
+    padding-left: 12%;
+    padding-right: 12%;
+    padding-top: 20px;
+}
+
+.header-element-links {
+    display: flex;
+    justify-content: space-between;
+    width: 40%;
+}
+
+.logo {
+    display: flex;
+    width: 12%;
+    justify-content: space-between;
+    height: 50px;
+}
+
+.logo-name {
+    color: white;
+    font-weight: 600;
+}
+
+.buy-btn {
+    background: white;
+    color: black;
+    padding: 15px 30px;
+    border-radius: 30px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.buy-btn:hover {
+    background: black;
+    color: white;
+}
+
+.review {
+    display: flex;
+    background: black;
+    padding-left: 12%;
+}
+
+.review-text {
+    width: 70%;
+}
+
+.review-element-text {
+    padding-top: 8%;
+    width: 40%
+}
+
+.review-buttons {
+    display: flex;
+    width: 400px;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.review-button-buy {
+    padding-top: 8%;
+}
+
+.review-button {
+    display: flex;
+    padding-top: 4%;
+    justify-content: space-between;
+    width: 45%;
+}
+
+.view-review {
+    padding-top: 2%;
+}
+
+.btn-buy-second {
+    color: white;
+    background: #1A54C7;
+    padding: 15px 30px;
+    border-radius: 30px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.btn-buy-second:hover {
+    color: white;
+    background: #174ab0;
+}
+
+.review-element-img {
+    padding-right: 8%;
+}
+
+/*POP UP*/
+
+/* Поп-ап (изначально скрыт) */
+.popup {
+    display: none;
+    /* Скрываем поп-ап по умолчанию */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    /* Полупрозрачный фон */
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+/* Контейнер для контента */
+.popup-content {
+    position: relative;
+    width: 80%;
+    max-width: 700px;
+    background: white;
+    padding: 10px;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+/* Кнопка закрытия */
+.close-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 24px;
+    cursor: pointer;
+    color: black;
+}
+
+/* Видео */
+iframe {
+    width: 100%;
+    height: 400px;
+    border: none;
+}
+
+.characteristics {
+    display: flex;
+    padding-left: 12%;
+    padding-right: 12%;
+    justify-content: space-between;
+}
+
+.char-element {
+    padding: 20px 60px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    z-index: 1;
+    height: 500px;
+}
+
+.char-element-inside {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-size: 16px;
+    padding-top: 40px;
+}
+
+.description {
+    margin-top: -10px;
+    text-align: center;
+}
+
+.star {
+    width: 25px;
+}
+
+.britvachar {
+    width: 350px;
+    z-index: 0;
+}
+.japanese-steel{
+    background-image: url('japansteel.png');
+    width: 100%;
+}
+.japanese-steel-text{
+    width: 400px;
+    padding-left: 15%;
+    padding-top: 200px;
+    padding-bottom:60px;
+
+}
+.japanese-steel h2{
+    color: white;
+    font-size: 24px;
+    text-align: left;
+}
+.japanese-steel p{
+    color: white;
+}
+.design{
+    display: flex;
+    padding-left: 12%;
+}
+.britva-image{
+    width:40vw;
+}
+.britva-image img{
+    width: 100%;
+}
+.design-text{
+    width: 30vw;
+    padding-top: 15%;
+}
+.config{
+    background-color: #242323;
+    height: 120vh;
+}
+.config-items{
+    display: flex;
+}
+.config-item-text{
+    padding-top: 50px;
+    padding-left: 15%;
+}
+.config h1{
+    padding-top: 100px;
+    text-align: center;
+    color:white ;
+    font-size: 32px;
+    font-weight: 700;
+}
+.config h3{
+    color: white;
+    font-weight: 400;
+    font-size: 16px;
+}
+.config h2{
+    text-align: left;
+    font-size: 20px;
+    color: white;
+}
+
+.media-container{
+    display: flex;
+    padding-left: 20%;
+}
+.image-media{
+    width: 300px;
+}
+.image-media img{
+    width: 100%;
+}
+.media-container-item{
+    width: 30vw;
+    padding-left: 10%;
+    padding-top: 5%;
+}
+.media h2{
+    font-size: 32px;
+    color: black;
+    font-weight: 400;
+}
+.media a{
+    color: #1A54C7;
+}
+.media a:hover{
+    color: #174ab0;
+}
+.media-btn{
+    display: flex;
+    width: 195px;
+    justify-content: space-between;
+}
+
+.footer-main{
+    display: flex;
+    padding-top: 100px;
+    justify-content: space-around;
+    align-items: center;
+}
+.footer-container h1{
+    color: #1A54C7;
+    text-align: left;
+    font-weight: 800;
+    font-size: 40px;
+    width: 100%;
+}
+
+.btns{
+    color: white;
+    background: #1A54C7;
+    padding: 20px 100px;
+}
+.btns:hover{
+    color: #1A54C7;
+    background: white;
+}
+.social-container{
+    display: flex;
+    width: 110px;
+    justify-content:space-between;
+}
+.image-container a img {
+    width: 50px; 
+    height: auto; 
+    transition: 0.3s ease; 
+  }
+  
+  .image-container a:hover img {
+    content: url('instagram_fill.png'); 
+  }
+
+  .image-container2 a img {
+    width: 50px; 
+    height: auto;
+    transition: 0.3s ease; 
+  }
+  
+  .image-container2 a:hover img {
+    content: url('facebook_feel.png'); 
+  }
+  footer p{
+    text-align: center;
+    padding-top:20px;
+  }
