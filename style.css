@@ -366,7 +366,7 @@ iframe {
     padding-top:20px;
   }
 
-  @media (max-width: 480px) {
+   @media (max-width: 480px) {
     header {
         align-items: center;
         padding-left: 12%;
@@ -376,7 +376,7 @@ iframe {
     }
 
     header a {
-        font-size: 80%;
+        font-size: 70%;
     }
 
     .review h1{
@@ -506,10 +506,22 @@ iframe {
     .image-media{
         width: 50%;
     }
-    .media-btn{
+    .media-btn a{
         display: flex;
         width: 90%;
-        justify-content: space-between;
+        text-align: center;
+    }
+    .media a{
+        color: white;
+        background: #1A54C7;
+        padding: 10px;
+    }
+    .media a:hover{
+        color: #174ab0;
+        background: white;
+    }
+    .media-btn img{
+        display: none;
     }
     .media-container-item{
         width: 100%;
