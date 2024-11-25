@@ -367,6 +367,17 @@ iframe {
   }
 
    @media (max-width: 480px) {
+ html, body {
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        overflow-x: hidden;
+    }
+    img, video, iframe {
+        max-width: 100%;
+        height: auto;
+        display: block;
+    }    
     header {
         align-items: center;
         padding-left: 12%;
@@ -549,5 +560,33 @@ iframe {
     }
     .britvachar{
         width: 100%
+    }
+    .popup-content {
+        position: relative;
+        width: 80%;
+        max-width: 430px;
+        background: white;
+        padding: 10px;
+        border-radius: 8px;
+        overflow: hidden;
+    }
+    iframe {
+        width: 100%;
+        height: 100%;
+        border: none;
+    }
+    .popup {
+        display: none;
+        /* Скрываем поп-ап по умолчанию */
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 90%;
+        height: 90%;
+        background-color: rgba(0, 0, 0, 0.8);
+        /* Полупрозрачный фон */
+        justify-content: center;
+        align-items: center;
+        z-index: 1000;
     }
 }
