@@ -365,3 +365,177 @@ iframe {
     text-align: center;
     padding-top:20px;
   }
+
+  @media (max-width: 480px) {
+    header {
+        align-items: center;
+        padding-left: 12%;
+        padding-right: 12%;
+        padding-top: 20px;
+        flex-wrap: wrap;
+    }
+
+    header a {
+        font-size: 80%;
+    }
+
+    .review h1{
+        font-size: 40px;
+        text-align: center;
+        width: 100%;
+    }
+    
+    .header-element-links {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+    }
+    
+    .logo {
+        display: flex;
+        justify-content: space-between;
+        height: 50px;
+        width: 100%;
+    }
+    
+    .logo-name {
+        color: white;
+        font-weight: 600;
+        width: 100%;
+    }
+    
+    .buy-btn {
+        background: white;
+        color: black;
+        padding: 15px 30px;
+        border-radius: 30px;
+        transition: background-color 0.3s ease, color 0.3s ease;
+    }
+    
+    .buy-btn:hover {
+        background: black;
+        color: white;
+    }
+
+    .review{
+        flex-wrap: wrap;
+        padding-left: 12%;
+        padding-right: 12%;
+    }
+    .review-element-text {
+        width: 100%
+    }
+    .review-text {
+        width: 100%;
+    }
+    .review-buttons {
+        width: 100%;
+        justify-content: space-between;
+        margin-top: 20px;
+    }
+    .review-button {
+        padding-top: 4%;
+        justify-content: space-between;
+        width: 55%;
+    }
+    .review-element-img {
+        padding-right: 8%;
+    }
+    .review-element-img img{
+        width: 100%;
+    }
+
+    .characteristics {
+        display: flex;
+        flex-direction: column;
+        padding-left: 12%;
+        padding-right: 12%;
+        justify-content: space-between;
+        padding-bottom: 20px;
+    }
+    .char-element {
+        padding: 20px 60px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+        z-index: 1;
+        height: 600px;
+    }
+
+    .japanese-steel-text{
+        width: 100%;
+        padding-right: 10%;
+        padding-left: 5%;
+        padding-top: 15%;
+        padding-bottom: 3%;
+    }
+    .japanese-steel p{
+        color: white;
+        padding-right: 12%;
+        padding-left: 5%;
+    }
+    .japanese-steel h2{
+        color: white;
+        font-size: 24px;
+        text-align: left;
+        padding-left: 5%;
+    }
+    .design-text{
+        width: 100%;
+        padding-top: 0;
+    }
+    .britva-image{
+        width:100%;
+    }
+    .design{
+        display: flex;
+        padding-left: 0%;
+        padding-top: 10%;
+        padding-bottom: 10%;
+    }
+    .config-item-text{
+        padding-top: 20px;
+        padding-left: 8%;
+    }
+    .config{
+        background-color: #242323;
+        height: 800px;
+    }
+    .media-container{
+        display: flex;
+        padding-left: 10%;
+    }
+    .image-media{
+        width: 50%;
+    }
+    .media-btn{
+        display: flex;
+        width: 90%;
+        justify-content: space-between;
+    }
+    .media-container-item{
+        width: 100%;
+        padding-left: 5%;
+        padding-top: 0%;
+        padding-right: 10%;
+    }
+
+    .footer-main{
+        flex-wrap: wrap;
+    }
+    .btns{
+        color: white;
+        background: #1A54C7;
+        padding: 10px 20px;
+    }
+    .social-container{
+        display: flex;
+        padding-top: 30px;
+        width: 50%;
+        justify-content:space-between;
+    }
+    .char-element-inside h3{
+        text-align: center;
+    }
+    .britvachar{
+        width: 100%
+    }
+}
